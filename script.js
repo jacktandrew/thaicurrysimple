@@ -2,17 +2,17 @@ jQuery(function($) {
     var ThaiCurrySimple = '109877149095742',     //  Facebook user id for Thai Curry Simple,
         globalLimit = 20;
         photo_sets = [
-            // desserts = {
-            //     userID: ThaiCurrySimple,
-            //     albumID: '87423',
-            //     selector: '.desserts',
-            //     limit: 3
-            // },
-            // kids = {
-            //     userID: ThaiCurrySimple,
-            //     albumID: '25241',
-            //     selector: '.kids',
-            // },
+            desserts = {
+                userID: ThaiCurrySimple,
+                albumID: '87423',
+                selector: '.desserts',
+                limit: 10
+            },
+            kids = {
+                userID: ThaiCurrySimple,
+                albumID: '25241',
+                selector: '.kids',
+            },
             eggs = {
                 userID: ThaiCurrySimple,
                 albumID: '44862',
