@@ -51,29 +51,9 @@ section:after, .group:after {
     box-shadow: 0 0 15px #ccc;
 }
 
-.talls img, .mids img, .shorts img {
+#photoStream img {
     float: left;
     position: absolute;
     z-index: -2;
 }
 
-.talls div { width: 66px; height: 90px; }
-
-.talls img {
-    margin: -10px;
-    height: 120px;
-}
-
-.mids div { width: 56px; height: 70px; }
-
-.mids img {
-    margin: -10px;
-    height: 90px;
-}
-
-.shorts div { width: 70px; height: 46px; }
-
-.shorts img {
-    margin: -10px;
-    height: 70px;
-}
