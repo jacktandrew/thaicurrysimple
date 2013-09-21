@@ -18,18 +18,37 @@ section:after, .group:after {
     margin: 10%;
 }
 
+#photoStream > div {
+    position: relative;
+    padding: 0 40px;
+}
+
+#photoStream .outer {
+    overflow-x: hidden;
+    padding: 50px 0;
+}
+
+#photoStream .inner {
+    position: relative;
+    left: 0;
+}
+
 .lightBox {
     display: none;
     position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -25%;
-    margin-top: -28%;
+    margin-top: -25%;
     background: white;
     padding: 30px;
     border: 1px solid gray;
     box-shadow: 15px 15px 15px #AAA;
     z-index: 10;
+}
+
+.lightBox img {
+    height: 65%;
 }
 
 .lightBox .close {
@@ -38,22 +57,45 @@ section:after, .group:after {
     right: 6px;
 }
 
-#photoStream div {
+.img_wrap {
     float: left;
     position: relative;
     overflow: hidden;
+    height: 160px;
+    width: 160px;
 }
 
-#photoStream div:hover { overflow: visible; }
+.img_wrap img {
+    float: left;
+    position: absolute;
+    z-index: -2;
+    width: 220%;
+    margin-left: -50%;
+    margin-top: -25%;
+/*    padding: 24%;*/
+/*    border: 1px solid #AAA;*/
+/*    background: white;*/
+}
 
-#photoStream div:hover img {
+.img_wrap:hover { overflow: visible; }
+
+.img_wrap:hover img {
     z-index: 1;
     box-shadow: 0 0 15px #ccc;
 }
 
-#photoStream img {
-    float: left;
+.forwards, .backwards {
+    padding: 10px;
+    font-size: 32px;
     position: absolute;
-    z-index: -2;
+    top: 50px;
+}
+
+.forwards {
+    right: 0;
+}
+
+.backwards {
+    left: 0;
 }
 
