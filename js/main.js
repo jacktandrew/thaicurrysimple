@@ -16,6 +16,22 @@ $(function(){
 
         console.log(todayName);
         $todaySpecial.addClass('active');
-    }
+    };
+
+    function listenForToggle() {
+        $('.toggle a').click(function(event) {
+            event.preventDefault();
+            var allToggles = $('.toggle a.active'),
+                target = $(this),
+                targetSection = target.attr('href'),
+                allSections = $('.menus > section');
+
+            allToggles.removeClass('active');
+            target.addClass('active');
+            allSections.hide();
+            $(targetSection).show();
+        });
+    };
+    listenForToggle();
     setDayOfWeek();
 });

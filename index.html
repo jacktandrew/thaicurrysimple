@@ -25,6 +25,12 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="logo">Thai Curry Simple</h1>
+
+                <a title="Share on Facebook" tooltip="Share on Facebook" alt="Share on Facebook" onclick="GotoShare('Facebook')" class="facebook-icon" style="background-image: url('plugins/share/images/share-icons-sprite_trans_new.png');"></a>
+
+                <a title="Tweet it" tooltip="Tweet it" alt="Tweet it" onclick="GotoShare('Twitter')" class="twitter-icon" style="background-image: url('plugins/share/images/share-icons-sprite_trans_new.png');"></a>
+
+
                 <nav>
                     <ul>
                         <li><a href="#daily_special">daily special</a></li>
@@ -42,165 +48,249 @@
                     <img src="img/greens_1800.jpg" />
                 </section>
 
-                <section class="menu" id="lunch">
-                    <h2>lunch</h2>
-                    <div class="price">
-                        <strong>6</strong>
-                        <sup>25</sup>
-                        <sub>+ tax</sub>
-                    </div>
+                <section class="menus">
+                    <h1 class="toggle">
+                        <a href="#lunch" class="active">lunch</a>
+                        <a href="#drinks_roti">drinks &amp; dessert</a>
+                        <a href="#glossary">glossary</a>
+                    </h1>
+                    <section id="lunch">
+                        <section class="menu" id="lunch">
+                            <h2>curry</h2>
+                            <div class="price">
+                                <strong>6</strong>
+                                <sup>25</sup>
+                                <sub>+ tax</sub>
+                            </div>
+
+                            <h3>green curry chicken</h3>
+                            <div>
+                                <p>bamboo shoots</p>
+                                <p>eggplant</p>
+                                <p>coconut milk</p>
+                                <p>lime leaf</p>
+                                <strong class="spicy">spicy</strong>
+                            </div>
+
+                            <h3>panang curry chicken</h3>
+                            <div>
+                                <p>chicken</p>
+                                <p>lime leaf</p>
+                                <strong class="medium">medium</strong>
+                            </div>
+
+                            <h3>massamun chicken</h3>
+                            <div>
+                                <p>potato</p>
+                                <p>onion</p>
+                                <p>carrot</p>
+                                <strong class="mild">mild</strong>
+                            </div>
+
+                            <h3>grill chicken satay</h3>
+                            <div>
+                                <p>peanut sauce</p>
+                                <p>cucumber</p>
+                                <strong class="mild">mild</strong>
+                            </div>
+
+                            <br/>
+                            <br/>
+
+                            <h2>noodles</h2>
+                            <div class="noodle_price">
+                                <span>chicken | tofu</span>
+
+                                <div class="price">
+                                    <strong>7</strong>
+                                    <sup>00</sup>
+                                    <sub>+ tax</sub>
+                                </div>
+
+                                <span>shrimp</span>
+
+                                <div class="price">
+                                    <strong>8</strong>
+                                    <sup>50</sup>
+                                    <sub>+ tax</sub>
+                                </div>
+                            </div>
+
+                            <h3>pad thai</h3>
+                            <div>
+                                <p>rice noodles</p>
+                                <p>bean sprouts</p>
+                                <p>roasted peanut</p>
+                                <p>egg</p>
+                                <p>cilantro</p>
+                                <p>fresh lime</p>
+                            </div>
+
+                            <h3>pad kee mow</h3>
+                            <div>
+                                <p>egg</p>
+                                <p>onion</p>
+                                <p>bamboo shoots</p>
+                                <p>string beans</p>
+                                <p>tomato</p>
+                                <p>fresh chilies</p>
+                                <p>basil</p>
+                            </div>
+                        </section>
+
+                        <section class="menu" id="daily_special">
+                            <h2>daily tofu curry</h2>
+                            <div class="price">
+                                <strong>6</strong>
+                                <sup>25</sup>
+                                <sub>+ tax</sub>
+                            </div>
+
+                            <div class="monday">
+                                <h4>monday</h4>
+                                <h3>red curry</h3>
+                                <div>
+                                    <p>cauliflower</p>
+                                    <p>eggplant</p>
+                                    <p>bamboo shoots</p>
+                                    <strong class="spicy">spicy</strong>
+                                </div>
+                            </div>
+
+                            <div class="tuesday">
+                                <h4>tuesday</h4>
+                                <h3>yellow curry</h3>
+                                <div>
+                                    <p>potato</p>
+                                    <p>onion</p>
+                                    <p>kabocha squash</p>
+                                    <strong class="mild">mild</strong>
+                                </div>
+                            </div>
+
+                            <div class="wednesday">
+                                <h4>wednesday</h4>
+                                <h3>massamun curry</h3>
+                                <div>
+                                    <p>potato</p>
+                                    <p>onion</p>
+                                    <p>carrot</p>
+                                    <strong class="mild">mild</strong>
+                                </div>
+                            </div>
+
+                            <div class="thursday">
+                                <h4>thursday</h4>
+                                <h3>panang curry</h3>
+                                <div>
+                                    <p>carrot</p>
+                                    <p>spinach</p>
+                                    <p>winter melon</p>
+                                    <strong class="medium">medium</strong>
+                                </div>
+                            </div>
+
+                            <div class="friday">
+                                <h4>friday</h4>
+                                <h3>pineapple curry</h3>
+                                <div>
+                                    <p>carrot</p>
+                                    <p>pineapple</p>
+                                    <p>spinach</p>
+                                    <strong class="medium">medium</strong>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
 
 
-                    <h3>green curry chicken</h3>
-                    <div>
-                        <p>bamboo shoots</p>
-                        <p>eggplant</p>
-                        <p>coconut milk</p>
-                        <p>lime leaf</p>
-                        <strong>spicy</strong>
-                    </div>
+                    <section id="drinks_roti">
+                        <section class="roti menu">
+                            <h2>roti</h2>
+                            <h4>panfried flaky puff pastry</h4>
+                            
+                            <div>            
+                                <p>condensed milk</p><p>sugar</p>
+                                <div class="price">
+                                    <strong>$2</strong>
+                                    <sup>00</sup>
+                                </div>
+                            </div>
 
+                            <div>   
+                                <p>cheese</p><p>condensed milk</p>
+                                <div class="price">
+                                    <strong>$2</strong>
+                                    <sup>50</sup>
+                                </div>
+                            </div>
 
-                    <h3>panang curry chicken</h3>
-                    <div>
-                        <p>chicken</p>
-                        <p>lime leaf</p>
-                        <strong>medium</strong>
-                    </div>
+                            <div>
+                                <p>chocolate</p><p>condensed milk</p>
+                                <div class="price">
+                                    <strong>$2</strong>
+                                    <sup>50</sup>
+                                </div>
+                            </div>
 
+                            <div>
+                                <p>strawberry syrup</p><p>condensed milk</p>
+                                <div class="price">
+                                    <strong>$2</strong>
+                                    <sup>50</sup>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p>chocolate</p><p>banana</p><p>condensed milk</p>
+                                <div class="price">
+                                    <strong>$3</strong>
+                                    <sup>00</sup>
+                                </div>
+                            </div>
 
-                    <h3>massamun chicken</h3>
-                    <div>
-                        <p>potato</p>
-                        <p>onion</p>
-                        <p>carrot</p>
-                        <strong>mild</strong>
-                    </div>
-
-
-                    <h3>grill chicken satay</h3>
-                    <div>
-                        <p>peanut sauce</p>
-                        <p>cucumber</p>
-                        <strong>mild</strong>
-                    </div>
-
-
-                    <h3>pad thai</h3>
-                    <div>
-                        <p>rice noodles</p>
-                        <p>bean sprouts</p>
-                        <p>roasted peanut</p>
-                        <p>egg</p>
-                        <p>cilantro</p>
-                        <p>fresh lime</p>
-                        <div class="price">
-                            <strong>7</strong>
-                            <sup>00</sup>
-                            <sub>+ tax</sub>
-                        </div>
-                    </div>
-
-
-                    <h3>pad thai shrimp</h3>
-                    <div>
-                        <p>rice noodles</p>
-                        <p>bean sprouts</p>
-                        <p>roasted peanut</p>
-                        <p>egg</p>
-                        <p>cilantro</p>
-                        <p>fresh lime</p>
-                        <div class="price">
-                            <strong>8</strong>
-                            <sup>50</sup>
-                            <sub>+ tax</sub>
-                        </div>
-                    </div>
+                            <div>
+                                <p>caramel raisin</p><p>condensed milk</p>
+                                <div class="price">
+                                    <strong>$3</strong>
+                                    <sup>00</sup>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="drinks menu">
+                            <h2>drinks</h2>
+                            <div class="price">
+                                <strong>2</strong>
+                                <sup>50</sup>
+                                <sub>+ tax</sub>
+                            </div>
+                            <h3>thai ice tea</h3>
+                            <h3>thai ice coffee</h3>
+                            <h3>thai ice tea w/ lime</h3>
+                            <h3>ginger honey tea</h3>
+                            <h3>homemade ice tea</h3>
+                            <div>
+                                <p>lychee</p>
+                                <p>strawberry</p>
+                                <p>peach</p>
+                                <p>mango</p>
+                                <p>passion fruit</p>
+                            </div>
+                            <h3>fresh lemonade</h3>
+                            <div>
+                                <p>lychee</p>
+                                <p>strawberry</p>
+                                <p>peach</p>
+                                <p>mango</p>
+                                <p>passion fruit</p>
+                            </div>
+                        </section>
+                    </section>
                 </section>
 
                 <section class="bg red_curry">
                     <img src="img/red_curry_1800.jpg" />
                 </section>
-
-                <section class="menu" id="daily_special">
-                    <h2>daily tofu curry</h2>
-                    <div class="price">
-                        <strong>6</strong>
-                        <sup>25</sup>
-                        <sub>+ tax</sub>
-                    </div>
-
-                    <div class="monday">
-                        <h4>monday</h4>
-                        <h3>red curry</h3>
-                        <div>
-                            <p>cauliflower</p>
-                            <p>eggplant</p>
-                            <p>bamboo shoots</p>
-                            <strong>spicy</strong>
-                        </div>
-                    </div>
-
-                    <div class="tuesday">
-                        <h4>tuesday</h4>
-                        <h3>yellow curry</h3>
-                        <div>
-                            <p>potato</p>
-                            <p>onion</p>
-                            <p>kabocha squash</p>
-                            <strong>mild</strong>
-                        </div>
-                    </div>
-
-                    <div class="wednesday">
-                        <h4>wednesday</h4>
-                        <h3>massamun curry</h3>
-                        <div>
-                            <p>potato</p>
-                            <p>onion</p>
-                            <p>carrot</p>
-                            <strong>mild</strong>
-                        </div>
-                    </div>
-
-                    <div class="thursday">
-                        <h4>thursday</h4>
-                        <h3>panang curry</h3>
-                        <div>
-                            <p>carrot</p>
-                            <p>spinach</p>
-                            <p>winter melon</p>
-                            <strong>medium</strong>
-                        </div>
-                    </div>
-
-                    <div class="friday">
-                        <h4>friday</h4>
-                        <h3>pineapple curry</h3>
-                        <div>
-                            <p>carrot</p>
-                            <p>pineapple</p>
-                            <p>spinach</p>
-                            <strongstrong>>medium</strong>
-                        </div>
-                    </div>
-
-                    <div class="saturday">
-                        <h4>saturday</h4>
-                        <h3>green curry</h3>
-                        <div>
-                            <p>bamboo shoots</p>
-                            <p>eggplant</p>
-                            <p>basil</p>
-                            <strong>spicy</strong>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bg restaurant">
-                    <img src="img/restaurant_1800.jpg" />
-                </section>
-
 
                 <section id="location">
                     <h2>Location</h2>
@@ -212,13 +302,18 @@
                     <a href="tel: 206-327-4838">
                         <p>(206) 327-4838</p>
                     </a>
-                </section>
 
-                <section>
                     <h2>Hours</h2>
                     <p>Monday - Friday</p>
                     <p>11 am. - 3 pm.</p>
                 </section>
+
+                <section class="bg restaurant">
+                    <img src="img/restaurant_1800.jpg" />
+                </section>
+
+
+
 
 
 

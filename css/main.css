@@ -39,3 +39,8 @@ section.bg img {
 		margin-top: -15%;
 	}
 }
+
+
+#location p, .hours p {
+	margin: 2px 0;
+}

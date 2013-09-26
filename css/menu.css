@@ -1,25 +1,49 @@
 .menu {
-    padding: 50px 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px 100px;
 }
 
-.menu .active {
+#daily_special > div {
+    opacity: 0.5;
+    font-size: 0.75em;
+}
+
+#daily_special .price,
+#daily_special > .active {
+    opacity: 1;
+    font-size: 1em;
+}
+
+#daily_special > .active {
+    display: inline-block;
     border: 5px solid #4B888D;
-    padding-top: 15px;
-    background: yellowgreen;
+    padding: 15px 55px 0;
 }
 
 .menu * {
     font-family: Arial;
     padding: 0;
     margin: 0;
-    text-align: center;
+}
+
+.menu .mild {
+    color: #458B00;
+}
+
+.menu .medium {
+    color: #cccc00;
+}
+
+.menu .spicy {
+    color: #BA0000;
 }
 
 .menu h2, .menu div {
     margin: 0 0 20px 0;
 }
 
-.menu h2, .menu .price {
+.menu h2, .menu .price, .menu p {
     display: inline-block;
 }
 
@@ -31,25 +55,37 @@
     color: gray;
 }
 
-.menu p {
-    display: inline-block;
-}
-
 .menu p:before {
     content: "/ ";
+}
+
+.toggle a.active {
+    color: #BA0000;
+}
+
+.toggle a:before {
+    content: "| ";
+    color: #4B888D;
+    margin: -5px 10px;
+}
+
+
+.menu .drinks p:before {
+    content: "| ";
 }
 
 .menu strong:before {
     content: "- ";
 }
 
+.toggle a:first-child:before,
 .menu .price strong:before,
 .menu p:first-child:before {
     content: "";
 }
 
 .menu .price {
-    margin: -10px 0 0 10px;
+    margin: -10px 10px 0;
 }
 
 .menu .price strong {
@@ -80,4 +116,32 @@
     font-size: 9px;
     margin-left: -18px;
     display: none;
+}
+
+.menu .noodle_price {
+    margin-top: -10px;
+}
+
+#drinks_roti {
+    display: none;
+}
+
+#drinks_roti .price {
+    display: inline-block;
+}
+
+#drinks_roti p {
+    margin-right: 4px;
+}
+
+#drinks_roti h4 {
+    margin: -10px 0 20px;
+}
+
+#drinks_roti h3 {
+    margin: 20px 0 0;
+}
+
+.drinks h2 {
+    margin: 0;
 }
