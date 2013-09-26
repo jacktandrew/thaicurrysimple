@@ -1,0 +1,274 @@
+<style>
+    * {
+        font-family: Arial;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2, div {
+        margin: 0 0 20px 0;
+    }
+
+    h2, .price {
+        display: inline-block;
+    }
+
+    h2, h3, h4 {
+        text-transform: uppercase;
+    }
+
+    h4 {
+        color: gray;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    strong {
+        color: gray;
+    }
+
+    p:before {
+        content: "/ ";
+    }
+
+    strong:before {
+        content: "- ";
+    }
+
+    .price strong:before,
+    p:first-child:before {
+        content: "";
+    }
+
+    .price {
+        margin: -10px 0 0 10px;
+    }
+
+    .price strong {
+        color: black;
+        font-size: 24px;
+    }
+
+    .price strong:before {
+    /*    content: " $";*/
+        font-weight: lighter;
+        font-size: 18px;
+        vertical-align: top;
+    }
+
+    .price sup   {
+        font-size: 14px;
+        margin: -3px;
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    .price sup:before {
+    /*    content: ".";*/
+        vertical-align: top;
+    }
+
+    .price sub {
+        font-size: 9px;
+        margin-left: -18px;
+        display: none;
+    }
+
+    .roti {
+        display: none;
+    }
+</style>
+
+<section class="lunch">
+    <h2>lunch</h2>
+    <div class="price">
+        <strong>6</strong>
+        <sup>25</sup>
+        <sub>+ tax</sub>
+    </div>
+
+
+    <h3>green curry chicken</h3>
+    <div>
+        <p>bamboo shoots</p>
+        <p>eggplant</p>
+        <p>coconut milk</p>
+        <p>lime leaf</p>
+        <strong>spicy</strong>
+    </div>
+
+
+    <h3>panang curry chicken</h3>
+    <div>
+        <p>chicken</p>
+        <p>lime leaf</p>
+        <strong>medium</strong>
+    </div>
+
+
+    <h3>massamun chicken</h3>
+    <div>
+        <p>potato</p>
+        <p>onion</p>
+        <p>carrot</p>
+        <strong>mild</strong>
+    </div>
+
+
+    <h3>grill chicken satay</h3>
+    <div>
+        <p>peanut sauce</p>
+        <p>cucumber</p>
+        <strong>mild</strong>
+    </div>
+
+
+    <h3>pad thai</h3>
+    <div>
+        <p>rice noodles</p>
+        <p>bean sprouts</p>
+        <p>roasted peanut</p>
+        <p>egg</p>
+        <p>cilantro</p>
+        <p>fresh lime</p>
+        <div class="price">
+            <strong>7</strong>
+            <sup>00</sup>
+            <sub>+ tax</sub>
+        </div>
+    </div>
+
+
+    <h3>pad thai shrimp</h3>
+    <div>
+        <p>rice noodles</p>
+        <p>bean sprouts</p>
+        <p>roasted peanut</p>
+        <p>egg</p>
+        <p>cilantro</p>
+        <p>fresh lime</p>
+        <div class="price">
+            <strong>8</strong>
+            <sup>50</sup>
+            <sub>+ tax</sub>
+        </div>
+    </div>
+</section>
+
+<section class="roti">
+    <h2>roti</h2>
+    <p>panfried flaky puff pastry</p>
+
+    <strong>$2</strong><sup>00</sup>
+    <h3>condensed milk</h3></h3>sugar</h3>
+
+    <strong>$2</strong><sup>50</sup>
+    <h3>cheese</h3></h3>condensed milk</h3>
+
+    <strong>$2</strong><sup>50</sup>
+    <h3>chocolate</h3></h3>condensed milk</h3>
+
+    <strong>$2</strong><sup>50</sup>
+    <h3>strawberry syrup</h3></h3>condensed milk</h3>
+
+    <strong>$3</strong><sup>00</sup>
+    <h3>chocolate</h3></h3>banana</h3></h3>condensed milk</h3>
+
+    <strong>$3</strong><sup>00</sup>
+    <h3>caramel raisin</h3></h3>condensed milk</h3>
+</section>
+
+<section class="daily_special">
+    <h2>daily tofu curry</h2>
+    <div class="price">
+        <strong>6</strong>
+        <sup>25</sup>
+        <sub>+ tax</sub>
+    </div>
+
+
+    <h4>monday</h4>
+    <h3>red curry</h3>
+    <div>
+        <p>cauliflower</p>
+        <p>eggplant</p>
+        <p>bamboo shoots</p>
+        <strong>spicy</strong>
+    </div>
+
+
+    <h4>tuesday</h4>
+    <h3>yellow curry</h3>
+    <div>
+        <p>potato</p>
+        <p>onion</p>
+        <p>kabocha squash</p>
+        <strong>mild</strong>
+    </div>
+
+
+    <h4>wednesday</h4>
+    <h3>massamun curry</h3>
+    <div>
+        <p>potato</p>
+        <p>onion</p>
+        <p>carrot</p>
+        <strong>mild</strong>
+    </div>
+
+
+    <h4>thursday</h4>
+    <h3>panang curry</h3>
+    <div>
+        <p>carrot</p>
+        <p>spinach</p>
+        <p>winter melon</p>
+        <strong>medium</strong>
+    </div>
+
+
+    <h4>friday</h4>
+    <h3>pineapple curry</h3>
+    <div>
+        <p>carrot</p>
+        <p>pineapple</p>
+        <p>spinach</p>
+        <strongstrong>>medium</strong>
+    </div>
+
+
+    <h4>saturday</h4>
+    <h3>green curry</h3>
+    <div>
+        <p>bamboo shoots</p>
+        <p>eggplant</p>
+        <p>basil</p>
+        <strong>spicy</strong>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
