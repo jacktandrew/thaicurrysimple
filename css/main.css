@@ -1,0 +1,41 @@
+h1.logo {
+	background: url("../img/logo_small.png");
+	height: 169px;
+	width: 210px;
+	text-indent: -9999px;
+	margin: 10px auto 0;
+}
+
+section.bg {
+	overflow: hidden;
+	max-height: 500px;
+}
+
+section.bg img {
+	width: 100%;
+	min-width: 760px;
+}
+
+@media only screen and (max-width: 480px) {
+	section.bg img {
+		margin-left: -30%;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	section.bg img {
+		margin-left: -20%;
+	}
+}
+
+@media only screen and (min-width: 760px) {
+	section.bg img {
+		margin-top: -5%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section.bg img {
+		margin-top: -15%;
+	}
+}

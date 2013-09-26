@@ -1,0 +1,40 @@
+<html>
+<head>
+<!-- enMDD2mFdi -->
+</head>
+<body>
+</body>
+<script>
+$(document).ready(function() {
+    $('#fetch_followers').click(function() {
+        var $access_token = '{access-token}';
+        pollInstagram('https://api.instagram.com/v1/users/{user-id}/followed-by?access_token={access-token}&count=100');
+    });
+});
+
+function pollInstagram(next_url, count) {
+    $.ajax({
+        method: "GET",
+        url: next_url,
+        dataType: "jsonp",
+        jsonp: "callback",
+        jsonpCallback: "jsonpcallback",
+        success: function(data) {
+            $.each(data.data, function(i, item) {
+                $("#log").val($("#log").val() + item.id + '\n');
+            });
+            $("#log").val($("#log").val() + data.pagination.next_url + '\n');
+
+            // If the next url is not null or blank:
+            if( data.pagination.next_url && count <=50 ) {
+                pollInstagram(data.pagination.next_url, ++count);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            //alert("Check you internet Connection");
+            $("#log").val($("#log").val() + 'Error\n');
+        }
+    });
+}​
+</script>
+</html>
