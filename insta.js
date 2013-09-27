@@ -1,50 +1,76 @@
-
+// <!-- thaicurrysimple userId = 174329427 -->
+// <!-- thaicurrysimple accessToken = 174329427.467ede5.16893db4c3984ba081d6ced06a26dd73 -->
 
 var feed = new Instafeed({
     get: 'user',
-    mock: true,
     limit: '10',
-	links: 'false',
     sortby: 'random',
-    userId: 571446556,
-    clientId: '5240c7b23e1e4277a7446b92ca589347',
-    resolution: 'standard_resolution',
-    accessToken: '571446556.467ede5.a6faa2eb89484b4a8cc67ca67243b613',
-
-    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    // userId: 174329427,
+    // accessToken: '174329427.467ede5.16893db4c3984ba081d6ced06a26dd73',
+    userId: 174329427,
+    accessToken: '174329427.467ede5.16893db4c3984ba081d6ced06a26dd73',
+    template:   '<div id="{{id}}" class="instagram_container">' +
+                    '<div id="{{id}}">' +
+                        '<a href="{{link}}" target="_blank" title="{{caption}} by @{{model.user.username}}" >' +
+                            '<img src="{{image}}" alt="{{caption}} by @{{model.user.username}}" class="instagram_image" />' +
+                        '</a>' +
+                    '</div>' +
+                    '<div class="instagram_image_meta">' +
+                        '<div class="likes instagram_image_meta_item">' +
+                            '<p>' +
+                                '<a class="icon-heart" href="{{link}}" target="_blank" title="{{caption}}" >' +
+                                    '{{likes}}' +
+                                '</a>' +
+                            '</p>' +
+                        '</div>' +
+                        '<div class="comments instagram_image_meta_item">' +
+                            '<p>' +
+                                '<a class="icon-bubble" href="{{link}}" target="_blank" title="{{caption}}" >' +
+                                    '{{comments}}' +
+                                '</a>' +
+                            '</p>' +
+                        '</div>' +
+                        '<div class="owner instagram_image_meta_item">' +
+                            '<p>' +
+                                '<a href="http://instagram.com/{{model.user.username}}" target="_blank" title="{{model.user.full_name}}" >' +
+                                    '<img src="{{model.user.profile_picture}}" class="owner_profile_picture" />' +
+                                    '{{model.user.full_name}}' +
+                                '</a>' +
+                            '</p>' +
+                        '</div>' +
+                        '<div class="caption instagram_image_meta_item">' +
+                            '<p>' +
+                                '{{caption}}' +
+                            '</p>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>'
 });
 
 
 feed.run();
 
 
-feed = new Instafeed({
 
-        
-        
-        
-  
-  custom: {
-    images: [],
-    currentImage: 0,
-    showImage: function () {
-      var result, image;
-      image = this.options.custom.images[this.options.custom.currentImage];
-      result = this._makeTemplate(this.options.template, {
-        model: image,
-        id: image.id,
-        link: image.link,
-        image: image.images[this.options.resolution].url,
-        caption: this._getObjectProperty(image, 'caption.text'),
-        likes: image.likes.count,
-        comments: image.comments.count,
-        location: this._getObjectProperty(image, 'location.name')
-      });
-      $("#instafeed").html(result);
-    }
-  },
-  success: function (data) {
-    this.options.custom.images = data.data; 
-    this.options.custom.showImage.call(this);
-  }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
