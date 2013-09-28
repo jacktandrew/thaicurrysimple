@@ -2,13 +2,19 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
+
+html,button,input,select,textarea { color: #222; }
+
+ul { list-style-type: none; }
+
+img { vertical-align: middle; }
+
+textarea { resize: vertical; }
 
 fieldset, nav ul {
     border: 0;
@@ -16,14 +22,11 @@ fieldset, nav ul {
     padding: 0;
 }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
 a {
     text-decoration: none;
     color: #4B888D;
 }
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -34,41 +37,11 @@ a {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-}
-
-textarea {
-    resize: vertical;
-}
-
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper > section {
-    margin: 70px 0;
 }
 
 /* ==============
@@ -98,11 +71,6 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
 }
 
 .footer-container footer {
@@ -162,95 +130,9 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        text-align: center;
-    }
-}
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
 
 .clearfix:before,
 .clearfix:after {
@@ -266,3 +148,6 @@ nav a:hover {
     *zoom: 1;
 }
 
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */

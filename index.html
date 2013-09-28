@@ -6,13 +6,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Thai Curry Simple</title>
+
+        <meta name="description" content=""/>
+        <meta property="og:title" content="Home Page"/>
+        <meta name="title" content="Home Page"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://thaicurrysimple.com"/>
+        <meta property="og:image" content="http://thaicurrysimple.com/images/e67dfb100764f6edeac440dd51202bc8_33jp.jpg"/>
+        <meta property="og:image" content="http://thaicurrysimple.com/images/81747382_pqdn.jpg"/>
+        <meta property="og:site_name" content="thaicurrysimple"/>
+        <meta property="og:description" content="Check out http://thaicurrysimple.com!"/>
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/icons.css">
         <link rel="stylesheet" href="css/menu.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -24,13 +36,12 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/pages/Thai-Curry-Simple/109877149095742" title="Share on Facebook" tooltip="Share on Facebook" alt="Share on Facebook" class="icon-facebook"></a></li>
+                    <li><a href="https://twitter.com/ThaiCurrySimple" title="Tweet it" tooltip="Tweet it" alt="Tweet it" class="icon-twitter-2"></a></li>
+                    <li><a href="http://instagram.com/thaicurrysimple" title="Follow on Instagram" tooltip="Follow on Instagram" alt="Follow on Instagram" class="icon-instagram"></a></li>
+                </ul>
                 <h1 class="logo">Thai Curry Simple</h1>
-
-                <a title="Share on Facebook" tooltip="Share on Facebook" alt="Share on Facebook" onclick="GotoShare('Facebook')" class="facebook-icon" style="background-image: url('plugins/share/images/share-icons-sprite_trans_new.png');"></a>
-
-                <a title="Tweet it" tooltip="Tweet it" alt="Tweet it" onclick="GotoShare('Twitter')" class="twitter-icon" style="background-image: url('plugins/share/images/share-icons-sprite_trans_new.png');"></a>
-
-
                 <nav>
                     <ul>
                         <li><a href="#daily_special">daily special</a></li>
@@ -50,102 +61,20 @@
 
                 <section class="menus">
                     <h1 class="toggle">
+                        <a href="#daily_special">daily special</a>
                         <a href="#lunch" class="active">lunch</a>
                         <a href="#drinks_roti">drinks &amp; dessert</a>
-                        <a href="#glossary">glossary</a>
                     </h1>
-                    <section id="lunch">
-                        <section class="menu" id="lunch">
-                            <h2>curry</h2>
-                            <div class="price">
-                                <strong>6</strong>
-                                <sup>25</sup>
-                                <sub>+ tax</sub>
-                            </div>
 
-                            <h3>green curry chicken</h3>
-                            <div>
-                                <p>bamboo shoots</p>
-                                <p>eggplant</p>
-                                <p>coconut milk</p>
-                                <p>lime leaf</p>
-                                <strong class="spicy">spicy</strong>
-                            </div>
+                    <section id="daily_special">
+                        <h2>daily tofu curry</h2>
+                        <div class="price">
+                            <strong>6</strong>
+                            <sup>25</sup>
+                            <sub>+ tax</sub>
+                        </div>
 
-                            <h3>panang curry chicken</h3>
-                            <div>
-                                <p>chicken</p>
-                                <p>lime leaf</p>
-                                <strong class="medium">medium</strong>
-                            </div>
-
-                            <h3>massamun chicken</h3>
-                            <div>
-                                <p>potato</p>
-                                <p>onion</p>
-                                <p>carrot</p>
-                                <strong class="mild">mild</strong>
-                            </div>
-
-                            <h3>grill chicken satay</h3>
-                            <div>
-                                <p>peanut sauce</p>
-                                <p>cucumber</p>
-                                <strong class="mild">mild</strong>
-                            </div>
-
-                            <br/>
-                            <br/>
-
-                            <h2>noodles</h2>
-                            <div class="noodle_price">
-                                <span>chicken | tofu</span>
-
-                                <div class="price">
-                                    <strong>7</strong>
-                                    <sup>00</sup>
-                                    <sub>+ tax</sub>
-                                </div>
-
-                                <span>shrimp</span>
-
-                                <div class="price">
-                                    <strong>8</strong>
-                                    <sup>50</sup>
-                                    <sub>+ tax</sub>
-                                </div>
-                            </div>
-
-                            <h3>pad thai</h3>
-                            <div>
-                                <p>rice noodles</p>
-                                <p>bean sprouts</p>
-                                <p>roasted peanut</p>
-                                <p>egg</p>
-                                <p>cilantro</p>
-                                <p>fresh lime</p>
-                            </div>
-
-                            <h3>pad kee mow</h3>
-                            <div>
-                                <p>egg</p>
-                                <p>onion</p>
-                                <p>bamboo shoots</p>
-                                <p>string beans</p>
-                                <p>tomato</p>
-                                <p>fresh chilies</p>
-                                <p>basil</p>
-                            </div>
-                        </section>
-
-                        <section class="menu" id="daily_special">
-                            <h2>daily tofu curry</h2>
-                            <div class="price">
-                                <strong>6</strong>
-                                <sup>25</sup>
-                                <sub>+ tax</sub>
-                            </div>
-
+                        <div class="scheduled">
                             <div class="monday">
                                 <h4>monday</h4>
                                 <h3>red curry</h3>
@@ -200,16 +129,101 @@
                                     <strong class="medium">medium</strong>
                                 </div>
                             </div>
-                        </section>
+                        </div>
+
+                        <div class="random">
+                            <div id="instafeed"></div>
+                        </div>
                     </section>
 
+                    <section id="lunch">
+                        <h2>curry</h2>
+                        <div class="price">
+                            <strong>6</strong>
+                            <sup>25</sup>
+                            <sub>+ tax</sub>
+                        </div>
+
+                        <h3>green curry chicken</h3>
+                        <div>
+                            <p>bamboo shoots</p>
+                            <p>eggplant</p>
+                            <p>coconut milk</p>
+                            <p>lime leaf</p>
+                            <strong class="spicy">spicy</strong>
+                        </div>
+
+                        <h3>panang curry chicken</h3>
+                        <div>
+                            <p>chicken</p>
+                            <p>lime leaf</p>
+                            <strong class="medium">medium</strong>
+                        </div>
+
+                        <h3>massamun chicken</h3>
+                        <div>
+                            <p>potato</p>
+                            <p>onion</p>
+                            <p>carrot</p>
+                            <strong class="mild">mild</strong>
+                        </div>
+
+                        <h3>grill chicken satay</h3>
+                        <div>
+                            <p>peanut sauce</p>
+                            <p>cucumber</p>
+                            <strong class="mild">mild</strong>
+                        </div>
+
+                        <br/>
+
+                        <h2>noodles</h2>
+                        <div class="noodle_price">
+                            <span>chicken | tofu</span>
+
+                            <div class="price">
+                                <strong>7</strong>
+                                <sup>00</sup>
+                                <sub>+ tax</sub>
+                            </div>
+
+                            <span>shrimp</span>
+
+                            <div class="price">
+                                <strong>8</strong>
+                                <sup>50</sup>
+                                <sub>+ tax</sub>
+                            </div>
+                        </div>
+
+                        <h3>pad thai</h3>
+                        <div>
+                            <p>rice noodles</p>
+                            <p>bean sprouts</p>
+                            <p>roasted peanut</p>
+                            <p>egg</p>
+                            <p>cilantro</p>
+                            <p>fresh lime</p>
+                        </div>
+
+                        <h3>pad kee mow</h3>
+                        <div>
+                            <p>egg</p>
+                            <p>onion</p>
+                            <p>bamboo shoots</p>
+                            <p>string beans</p>
+                            <p>tomato</p>
+                            <p>fresh chilies</p>
+                            <p>basil</p>
+                        </div>
+                    </section>
 
                     <section id="drinks_roti">
                         <section class="roti menu">
                             <h2>roti</h2>
                             <h4>panfried flaky puff pastry</h4>
-                            
-                            <div>            
+
+                            <div>
                                 <p>condensed milk</p><p>sugar</p>
                                 <div class="price">
                                     <strong>$2</strong>
@@ -217,7 +231,7 @@
                                 </div>
                             </div>
 
-                            <div>   
+                            <div>
                                 <p>cheese</p><p>condensed milk</p>
                                 <div class="price">
                                     <strong>$2</strong>
@@ -240,7 +254,7 @@
                                     <sup>50</sup>
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <p>chocolate</p><p>banana</p><p>condensed milk</p>
                                 <div class="price">
@@ -313,14 +327,6 @@
                 </section>
 
 
-
-
-
-
-
-
-
-
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
@@ -334,7 +340,10 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/instafeed.js"></script>
+        <script src="js/insta.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/share.js"></script>
 
         <script>
             // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

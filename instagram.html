@@ -1,5 +1,63 @@
-<script type="text/javascript" src="instafeed.js"></script>
-<script type="text/javascript" src="insta.js"></script>
+<style>
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.instagram_container {
+    position: relative;
+    float: left;
+}
+.instagram_image {
+   width: 400px;
+}
+
+.instagram_container:hover .owner,
+.instagram_container:hover .caption {
+    display: block;
+}
+
+
+.owner {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    right: 5px;
+    border: 5px solid #EEE;
+}
+
+.owner p {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+/*    padding: 5px 0;*/
+    color: #333;
+    line-height: 24px;
+    background: white;
+    text-align: center;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    color: #333;
+    background: rgba(255,255,255,0.6);
+    padding: 0 20px;
+}
+
+
+</style>
+
+
+<script type="text/javascript" src="js/vendor/instafeed.js"></script>
+<script type="text/javascript" src="js/insta.js"></script>
 <div id="instafeed"></div>
 
 <!-- thaicurrysimple userId = 174329427 -->

@@ -1,8 +1,16 @@
-.menu {
+.menus * {
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+.menus section {
     display: inline-block;
     vertical-align: top;
-    padding: 50px 100px;
+    padding: 25px 50px;
 }
+
+#daily_special { display: none; }
 
 #daily_special > div {
     opacity: 0.5;
@@ -21,41 +29,29 @@
     padding: 15px 55px 0;
 }
 
-.menu * {
-    font-family: Arial;
-    padding: 0;
-    margin: 0;
-}
+.menus .mild { color: #458B00; }
+.menus .medium { color: #cccc00; }
+.menus .spicy { color: #BA0000; }
 
-.menu .mild {
-    color: #458B00;
-}
+.menus h1 { margin: 40px 0 20px;}
 
-.menu .medium {
-    color: #cccc00;
-}
-
-.menu .spicy {
-    color: #BA0000;
-}
-
-.menu h2, .menu div {
+.menus h2, .menus div {
     margin: 0 0 20px 0;
 }
 
-.menu h2, .menu .price, .menu p {
+.menus h2, .menus .price, .menus p {
     display: inline-block;
 }
 
-.menu h2, .menu h3, .menu h4 {
+.menus h2, .menus h3, .menus h4 {
     text-transform: uppercase;
 }
 
-.menu h4, .menu strong {
+.menus h4, .menus strong {
     color: gray;
 }
 
-.menu p:before {
+.menus p:before {
     content: "/ ";
 }
 
@@ -70,55 +66,55 @@
 }
 
 
-.menu .drinks p:before {
+.menus .drinks p:before {
     content: "| ";
 }
 
-.menu strong:before {
+.menus strong:before {
     content: "- ";
 }
 
 .toggle a:first-child:before,
-.menu .price strong:before,
-.menu p:first-child:before {
+.menus .price strong:before,
+.menus p:first-child:before {
     content: "";
 }
 
-.menu .price {
+.menus .price {
     margin: -10px 10px 0;
 }
 
-.menu .price strong {
+.menus .price strong {
     color: black;
     font-size: 24px;
 }
 
-.menu .price strong:before {
+.menus .price strong:before {
 /*    content: " $";*/
     font-weight: lighter;
     font-size: 18px;
     vertical-align: top;
 }
 
-.menu .price sup   {
+.menus .price sup   {
     font-size: 14px;
     margin: -3px;
     font-weight: bold;
 /*    vertical-align: top;*/
 }
 
-.menu .price sup:before {
+.menus .price sup:before {
 /*    content: ".";*/
     vertical-align: top;
 }
 
-.menu .price sub {
+.menus .price sub {
     font-size: 9px;
     margin-left: -18px;
     display: none;
 }
 
-.menu .noodle_price {
+.menus .noodle_price {
     margin-top: -10px;
 }
 
