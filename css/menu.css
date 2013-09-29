@@ -1,42 +1,42 @@
-.menus * {
+.menus div, .menus li, .menus section, .menus h2, .menus h3, .menus h4, .menus h5, .menus p  {
     font-family: Arial;
     padding: 0;
     margin: 0;
+    font-size: 0.9em;
 }
 
 .menus section {
     display: inline-block;
     vertical-align: top;
-    padding: 25px 50px;
+    padding: 1% 2% 3%;
 }
 
-#daily_special { display: none; }
+#drinks_roti, #daily_special { display: none; }
 
-#daily_special > div {
+.scheduled > div {
     opacity: 0.5;
-    font-size: 0.75em;
+    font-size: 0.9em;
 }
 
 #daily_special .price,
-#daily_special > .active {
+#daily_special .scheduled .active {
     opacity: 1;
-    font-size: 1em;
 }
 
-#daily_special > .active {
+#daily_special .scheduled .active {
     display: inline-block;
     border: 5px solid #4B888D;
-    padding: 15px 55px 0;
+    padding: 15px 55px;
+    margin: 10px 0;
+    font-size: 1em;
 }
 
 .menus .mild { color: #458B00; }
 .menus .medium { color: #cccc00; }
 .menus .spicy { color: #BA0000; }
 
-.menus h1 { margin: 40px 0 20px;}
-
-.menus h2, .menus div {
-    margin: 0 0 20px 0;
+#lunch h3 {
+    margin: 1.2em 0 0;
 }
 
 .menus h2, .menus .price, .menus p {
@@ -51,9 +51,7 @@
     color: gray;
 }
 
-.menus p:before {
-    content: "/ ";
-}
+.toggle { margin: -30px 0 0; }
 
 .toggle a.active {
     color: #BA0000;
@@ -62,17 +60,11 @@
 .toggle a:before {
     content: "| ";
     color: #4B888D;
-    margin: -5px 10px;
 }
 
-
-.menus .drinks p:before {
-    content: "| ";
-}
-
-.menus strong:before {
-    content: "- ";
-}
+.menus p:before { content: "/ "; }
+.menus .drinks p:before { content: "| "; }
+.menus strong:before { content: "- "; }
 
 .toggle a:first-child:before,
 .menus .price strong:before,
@@ -86,21 +78,18 @@
 
 .menus .price strong {
     color: black;
-    font-size: 24px;
+/*    font-size: 24px;*/
 }
 
 .menus .price strong:before {
 /*    content: " $";*/
     font-weight: lighter;
-    font-size: 18px;
     vertical-align: top;
 }
 
 .menus .price sup   {
-    font-size: 14px;
     margin: -3px;
     font-weight: bold;
-/*    vertical-align: top;*/
 }
 
 .menus .price sup:before {
@@ -109,16 +98,7 @@
 }
 
 .menus .price sub {
-    font-size: 9px;
     margin-left: -18px;
-    display: none;
-}
-
-.menus .noodle_price {
-    margin-top: -10px;
-}
-
-#drinks_roti {
     display: none;
 }
 
@@ -126,18 +106,6 @@
     display: inline-block;
 }
 
-#drinks_roti p {
-    margin-right: 4px;
-}
-
 #drinks_roti h4 {
-    margin: -10px 0 20px;
-}
-
-#drinks_roti h3 {
-    margin: 20px 0 0;
-}
-
-.drinks h2 {
-    margin: 0;
+    margin: 0 0 1em;
 }

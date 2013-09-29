@@ -1,17 +1,18 @@
-.wrapper {
-    text-align: center;
-}
+.wrapper { text-align: center; }
 
 ul.social-icons {
     float: right;
-    margin-right: 10%;
+    margin: 2% 2% 0 0;
+    width: 20%;
 }
 
 ul.social-icons li {
     display: inline-block;
     font-size: 26px;
-    margin: 0 2px;
+    padding: 0 5%;
 }
+
+ul.social-icons li:after { content: ""; }
 
 h1.logo {
 	background: url("../img/logo_small.png");
@@ -35,6 +36,10 @@ section.bg img {
 	section.bg img {
 		margin-left: -30%;
 	}
+
+    .menus .toggle a {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -43,21 +48,16 @@ section.bg img {
 	}
 
     ul.social-icons {
-        margin-right: 5%;
+        width: 10%;
     }
 
     ul.social-icons li {
         display: block;
-        margin: 10px 0;
+        padding: 5% 0;
     }
 
     .menu {
         padding: 10px 20px !important;
-    }
-
-    .menus .toggle a {
-        display: block;
-        margin: 30px 0;
     }
 
     .menus .toggle a:before {
@@ -77,7 +77,5 @@ section.bg img {
 	}
 }
 
-#location { margin: 0 0 20px 0; }
-#location p, .hours p {
-	margin: 2px 0;
-}
+.menus, #location { margin: 3em 0; }
+#location p, .hours p { margin: 2px 0; }
