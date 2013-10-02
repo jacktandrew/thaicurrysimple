@@ -1,25 +1,57 @@
-.wrapper { text-align: center; }
-
-ul.social-icons {
-    float: right;
-    margin: 2% 2% 0 0;
-    width: 20%;
+.greens {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 500px;
 }
 
-ul.social-icons li {
+.main-container {
+    margin-top: 250px;
+}
+
+.header-container .social-icons {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    width: 25%;
+}
+
+.header-container header {
+    background: rgba(1,1,1,0.5);
+    display: inline-block;
+    margin: 2% auto;
+    width: 40%;
+}
+
+.header-container header nav {
+    padding-top: 10px;
+    background: #4B888D;
+}
+
+.header-container nav a {
+    color: #fff;
+}
+
+.header-container nav li:after {
+    color: #fff;
+}
+
+.wrapper { text-align: center; }
+
+.social-icons li {
     display: inline-block;
     font-size: 26px;
     padding: 0 5%;
 }
 
-ul.social-icons li:after { content: ""; }
+.social-icons li:after { content: ""; }
 
 h1.logo {
-	background: url("../img/logo_small.png");
+	background: url("../img/logo_no_circle.png");
 	height: 169px;
 	width: 210px;
 	text-indent: -9999px;
-	margin: 10px auto 0;
+	margin: 10px auto 0px;
 }
 
 section.bg {
@@ -32,26 +64,17 @@ section.bg img {
 	min-width: 760px;
 }
 
-@media only screen and (max-width: 480px) {
-	section.bg img {
-		margin-left: -30%;
-	}
+#menus, #location { padding: 5% 0 8%; }
+#location p, .hours p { margin: 2px 0; }
 
-    .menus .toggle a {
+@media only screen and (max-width: 480px) {
+    #menus .toggle a {
         display: block;
     }
 }
 
 @media only screen and (max-width: 660px) {
-	section.bg img {
-		margin-left: -20%;
-	}
-
-    ul.social-icons {
-        width: 10%;
-    }
-
-    ul.social-icons li {
+    .social-icons li {
         display: block;
         padding: 5% 0;
     }
@@ -60,22 +83,24 @@ section.bg img {
         padding: 10px 20px !important;
     }
 
-    .menus .toggle a:before {
+    #menus .toggle a:before {
         content: "";
     }
 }
 
-@media only screen and (min-width: 760px) {
-	section.bg img {
-		margin-top: -5%;
-	}
+@media only screen and (max-width: 1000px) {
+    .header-container header {
+        width: 50%;
+    }
 }
 
-@media only screen and (min-width: 1140px) {
-	section.bg img {
-		margin-top: -15%;
-	}
-}
+@media only screen and (max-width: 700px) {
+    .header-container header {
+        width: 70%;
+    }
 
-.menus, #location { margin: 3em 0; }
-#location p, .hours p { margin: 2px 0; }
+    .header-container .social-icons {
+        width: 10%;
+        right: 3%;
+    }
+}

@@ -1,17 +1,42 @@
-.menus div, .menus li, .menus section, .menus h2, .menus h3, .menus h4, .menus h5, .menus p  {
+#menus div, #menus li, #menus section, #menus h2, #menus h3, #menus h4, #menus h5, #menus p  {
     font-family: Arial;
     padding: 0;
     margin: 0;
 }
 
-.menus section section {
+#menus section section {
     display: inline-block;
     vertical-align: top;
     padding: 1% 2% 3%;
     font-size: 0.9em;
 }
 
-#drinks_roti, #daily_special { display: none; }
+#menus #glossary p {
+    display: block;
+}
+
+#glossary span:first-child {
+    color: #4B888D;
+}
+
+#glossary span:nth-child(2) {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+#glossary span:before {
+    padding: 0 15px;
+    content: " - ";
+}
+
+#glossary span:first-child:before,
+#menus #glossary p:before {
+    content: "";
+}
+
+#drinks_roti, #daily_special, #lunch { display: none; }
 
 .scheduled > div {
     opacity: 0.5;
@@ -31,23 +56,23 @@
     font-size: 1em;
 }
 
-.menus .mild { color: #458B00; }
-.menus .medium { color: #cccc00; }
-.menus .spicy { color: #BA0000; }
+#menus .mild { color: #458B00; }
+#menus .medium { color: #cccc00; }
+#menus .spicy { color: #BA0000; }
 
 #lunch h3 {
     margin: 1.2em 0 0;
 }
 
-.menus h2, .menus .price, .menus p {
+#menus h2, #menus .price, #menus p {
     display: inline-block;
 }
 
-.menus h2, .menus h3, .menus h4 {
+#menus h2, #menus h3, #menus h4 {
     text-transform: uppercase;
 }
 
-.menus h4, .menus strong {
+#menus h4, #menus strong {
     color: gray;
 }
 
@@ -62,44 +87,44 @@
     color: #4B888D;
 }
 
-.menus p:before { content: "/ "; }
-.menus .drinks p:before { content: "| "; }
-.menus strong:before { content: "- "; }
+#menus p:before { content: "/ "; }
+#menus .drinks p:before { content: "| "; }
+#menus strong:before { content: "- "; }
 
 .toggle a:first-child:before,
-.menus .price strong:before,
-.menus p:first-child:before {
+#menus .price strong:before,
+#menus p:first-child:before {
     content: "";
 }
 
-.menus .price {
+#menus .price {
     font-size: 1em;
     margin: 0 10px 0;
     vertical-align: top;
 }
 
-.menus .price strong {
+#menus .price strong {
     color: black;
     font-size: 1.25em;
 }
 
-.menus .price strong:before {
+#menus .price strong:before {
 /*    content: " $";*/
     font-weight: lighter;
     vertical-align: top;
 }
 
-.menus .price sup   {
+#menus .price sup   {
     margin: -3px;
     font-weight: bold;
 }
 
-.menus .price sup:before {
+#menus .price sup:before {
 /*    content: ".";*/
     vertical-align: top;
 }
 
-.menus .price sub {
+#menus .price sub {
     margin-left: -18px;
     display: none;
 }

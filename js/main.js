@@ -24,7 +24,7 @@ $(function(){
             var allToggles = $('.toggle a.active'),
                 target = $(this),
                 targetSection = target.attr('href'),
-                allSections = $('.menus > section');
+                allSections = $('#menus > section');
 
             allToggles.removeClass('active');
             target.addClass('active');
@@ -32,6 +32,7 @@ $(function(){
             $(targetSection).show();
         });
     };
+
     listenForToggle();
     setDayOfWeek();
 });
