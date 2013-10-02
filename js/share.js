@@ -25,7 +25,7 @@ function gotoShare(event) {
             shareUrl = twitterFormat.format(fullUrl, pageTitle, message);
             break;
         case "Instagram":
-            shareUrl = twitterFormat.format();
+            shareUrl = instagramFormat.format();
             break;
 
     }
@@ -33,7 +33,7 @@ function gotoShare(event) {
 }
 
 $(function(){
-    $('.icon-facebook').click({param: 'Facebook'}, gotoShare)
-    $('.icon-twitter-2').click({param: 'Twitter'}, gotoShare)
-    // $('.icon-instagram').click({param: 'Instagram'}, gotoShare)
+    $('.icon-facebook').click({param: 'Facebook'}, gotoShare);
+    $('.icon-twitter-2').click({param: 'Twitter'}, gotoShare);
+    $('.icon-instagram').click({param: 'Instagram'}, gotoShare);
 });
