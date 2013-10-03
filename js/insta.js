@@ -5,13 +5,13 @@ var feed = new Instafeed({
     get: 'tagged',
     tagName: 'thaicurrysimple',
     resolution: 'standard_resolution',
-    limit: '10',
+    limit: '20',
     sortby: 'most-recent',
     // userId: 174329427,
     accessToken: '174329427.467ede5.16893db4c3984ba081d6ced06a26dd73',
     template:   '<div id="{{id}}" class="instagram_container">' +
                     '<div id="{{id}}">' +
-                        '<a href="{{link}}" target="_blank" title="{{caption}} by @{{model.user.username}}" >' +
+                        '<a href="{{link}}" target="_blank" >' +
                             '<img src="{{image}}" alt="{{caption}} by @{{model.user.username}}" class="instagram_image" />' +
                         '</a>' +
                     '</div>' +

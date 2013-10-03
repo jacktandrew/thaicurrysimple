@@ -63,6 +63,7 @@ section.bg img {
 
 #about_us section {
     max-width: 400px;
+    padding: 10px;
     margin: 0 auto;
 }
 
@@ -130,9 +131,11 @@ section.bg img {
 
 
 @media only screen and (min-width: 600px) {
+
     nav.fixed ul {
         position: fixed;
         top: 0;
+        z-index: 10;
     }
 
     nav.fixed div {
@@ -142,6 +145,7 @@ section.bg img {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 10;
     }
 
     nav.fixed div a {

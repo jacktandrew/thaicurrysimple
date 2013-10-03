@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+.impromtu {
+    width: 300px;
+}
+
+.impromtu img {
+    margin-top: 20px;
+    width: 300px;
+}
+
 #menus section { display: none; }
 #menus section.active { display: block; }
 
