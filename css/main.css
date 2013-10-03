@@ -1,7 +1,6 @@
 .greens {
     top: 0;
     z-index: -1;
-    height: 500px;
 }
 
 .header-container {
@@ -22,7 +21,7 @@ header {
     display: inline-block;
 }
 
-header, header ul {    width: 500px }
+header, header ul { width: 500px }
 
 header ul {
     background: #4B888D;
@@ -62,7 +61,18 @@ section.bg img {
 	min-width: 760px;
 }
 
-#menus, #location { padding: 25px 0 50px; }
+#about_us section {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#about_us p {
+    text-align: left;
+}
+
+
+
+#menus, #location, #about_us { padding: 125px 0 50px; margin-top: -100px; }
 #location p, .hours p { margin: 2px 0; }
 
 

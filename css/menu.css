@@ -4,6 +4,9 @@
     margin: 0;
 }
 
+#menus section { display: none; }
+#menus section.active { display: block; }
+
 #menus section section {
     display: inline-block;
     vertical-align: top;
@@ -35,8 +38,6 @@
 #menus #glossary p:before {
     content: "";
 }
-
-#drinks_roti, #daily_special, #glossary { display: none; }
 
 .scheduled > div {
     opacity: 0.5;
