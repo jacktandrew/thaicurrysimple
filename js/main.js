@@ -33,6 +33,29 @@ $(function(){
         });
     };
 
+    function fixMenuToTop() {
+        var fixed = false,
+            $logo = $('.logo'),
+            $nav = $('header nav');
+
+        $(document).scroll(function() {
+            if( $(this).scrollTop() > 200 ) {
+                if( !fixed ) {
+                    fixed = true;
+                    $logo.addClass('fixed');
+                    $nav.addClass('fixed');
+                }
+            } else {
+                if( fixed ) {
+                    fixed = false;
+                    $logo.removeClass('fixed');
+                    $nav.removeClass('fixed');
+                }
+            }
+        });
+    }
+
+    fixMenuToTop();
     listenForToggle();
     setDayOfWeek();
 });

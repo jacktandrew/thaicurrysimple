@@ -23,8 +23,7 @@ a { text-decoration: none; color: #4B888D; }
 
 nav a {
     display: inline-block;
-    margin-bottom: 10px;
-    padding: 3%;
+    font-size: 1.3em;
     text-align: center;
     font-weight: bold;
     color: #4B888D;
@@ -34,6 +33,10 @@ nav a:hover {
     opacity: .7;
 }
 
+
+header nav li a {
+    padding: 15px 20px;
+}
 /* ==============
     MOBILE: Main
    ============== */
@@ -65,11 +68,7 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        padding: 2%;
-    }
-
-    nav li:after {
+    header nav li:after {
         content: "|";
         color: #4B888D;
     }

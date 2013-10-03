@@ -1,38 +1,38 @@
 .greens {
-    position: absolute;
     top: 0;
     z-index: -1;
     height: 500px;
 }
 
-.main-container {
-    margin-top: 250px;
+.header-container {
+    position: absolute;
+    top: 2%;
+    width: 100%;
 }
 
-.header-container .social-icons {
+.social-icons {
     position: absolute;
     right: 1%;
     top: 5%;
-    width: 25%;
+    width: 20%;
 }
 
-.header-container header {
+header {
     background: rgba(1,1,1,0.5);
     display: inline-block;
-    margin: 2% auto;
-    width: 40%;
 }
 
-.header-container header nav {
-    padding-top: 10px;
+header, header ul {    width: 500px }
+
+header ul {
     background: #4B888D;
 }
 
-.header-container nav a {
+header nav a, .social-icons a {
     color: #fff;
 }
 
-.header-container nav li:after {
+header nav li:after {
     color: #fff;
 }
 
@@ -41,10 +41,8 @@
 .social-icons li {
     display: inline-block;
     font-size: 26px;
-    padding: 0 5%;
+    padding: 0 3%;
 }
-
-.social-icons li:after { content: ""; }
 
 h1.logo {
 	background: url("../img/logo_no_circle.png");
@@ -64,43 +62,89 @@ section.bg img {
 	min-width: 760px;
 }
 
-#menus, #location { padding: 5% 0 8%; }
+#menus, #location { padding: 25px 0 50px; }
 #location p, .hours p { margin: 2px 0; }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 800px) {
+    .social-icons {
+        width: 10%;
+        right: 3%;
+    }
+
+    .social-icons li {
+        padding: 20% 0;
+        display: block;
+    }
+
+    #menus .toggle {
+        margin-bottom: 30px;
+    }
+
+    #menus .toggle a:before {
+        content: "";
+    }
+
     #menus .toggle a {
         display: block;
     }
 }
 
-@media only screen and (max-width: 660px) {
-    .social-icons li {
-        display: block;
-        padding: 5% 0;
+@media only screen and (max-width: 720px) {
+
+    .social-icons {
+        width: 10%;
+        right: 10%;
+        top: 3%;
     }
 
     .menu {
         padding: 10px 20px !important;
     }
 
-    #menus .toggle a:before {
-        content: "";
+    header,
+    header ul {
+        width: 100%;
+    }
+
+    .header-container {
+        top: 0;
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .header-container header {
-        width: 50%;
+
+.logo_inline {
+    display: none;
+    max-width: 50%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    nav.fixed ul {
+        position: fixed;
+        top: 0;
+    }
+
+    nav.fixed div {
+        background-color: rgba(1,1,1,0.5);
+        width: 100%;
+        height: 52px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    nav.fixed div a {
+        float: left;
+    }
+
+}
+
+
+@media only screen and (min-width: 1100px) {
+    nav.fixed .logo_inline {
+        display: block;
+        margin: 2% 10%;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .header-container header {
-        width: 70%;
-    }
-
-    .header-container .social-icons {
-        width: 10%;
-        right: 3%;
-    }
-}

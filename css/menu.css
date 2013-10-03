@@ -36,7 +36,7 @@
     content: "";
 }
 
-#drinks_roti, #daily_special, #lunch { display: none; }
+#drinks_roti, #daily_special, #glossary { display: none; }
 
 .scheduled > div {
     opacity: 0.5;
@@ -76,7 +76,9 @@
     color: gray;
 }
 
-.toggle { margin: -30px 0 0; }
+.toggle a {
+    padding: 3%;
+}
 
 .toggle a.active {
     color: #BA0000;
