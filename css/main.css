@@ -1,3 +1,9 @@
+.bg {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 30em;
+}
+
 .greens {
     top: 0;
     z-index: -1;
@@ -5,7 +11,7 @@
 
 .header-container {
     position: absolute;
-    top: 2%;
+    top: 8px;
     width: 100%;
 }
 
@@ -71,6 +77,21 @@ section.bg img {
     text-align: left;
 }
 
+.critics {
+    margin: 20px 0;
+}
+
+.critics p { clear: both; }
+.critics p:before, .critics p:after { font-size: 24px;}
+.critics p:before { content: '“ '; }
+.critics p:after { content: ' ”'; }
+
+.critics a {
+    display: block;
+    float: right;
+    margin: -10px 0 20px;
+}
+.critics a:before { content: '— '; }
 
 
 #menus, #location, #about_us { padding: 125px 0 50px; margin-top: -100px; }
@@ -101,6 +122,12 @@ section.bg img {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .bg {
+        height: 20em;
+    }
+}
+
 @media only screen and (max-width: 720px) {
 
     .social-icons {
@@ -111,6 +138,7 @@ section.bg img {
 
     .menu {
         padding: 10px 20px !important;
+        margin-bottom: 50px;
     }
 
     header,
@@ -121,6 +149,10 @@ section.bg img {
     .header-container {
         top: 0;
     }
+
+    .bg {
+        height: 15em;
+    }
 }
 
 
@@ -130,7 +162,7 @@ section.bg img {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
 
     nav.fixed ul {
         position: fixed;
@@ -152,13 +184,45 @@ section.bg img {
         float: left;
     }
 
+    .greens {
+        background-image: url(../img/greens_1500.jpg);
+    }
+
+    .dishes {
+        background-image: url(../img/dishes.jpg);
+    }
+
+    .restaurant {
+        background-image: url(../img/restaurant_1500.jpg);
+    }
+
 }
 
+@media only screen and (max-width: 480px) {
 
-@media only screen and (min-width: 1100px) {
+    .greens {
+        background-image: url(../img/greens_420.jpg);
+        height: 22em;
+    }
+
+    .dishes {
+        background-image: url(../img/dishes_420.jpg);
+    }
+
+    .restaurant {
+        background-image: url(../img/restaurant_420.jpg);
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
     nav.fixed .logo_inline {
         display: block;
         margin: 2% 10%;
+    }
+
+    .bg {
+        background-position: center;
     }
 }
 

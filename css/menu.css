@@ -4,11 +4,11 @@
     margin: 0;
 }
 
-.impromtu {
+.trust {
     width: 300px;
 }
 
-.impromtu img {
+.trust img {
     margin-top: 20px;
     width: 300px;
 }
@@ -23,11 +23,17 @@
     font-size: 0.9em;
 }
 
+#menus #glossary {
+    font-size: 1.2em;
+}
+
 #menus #glossary p {
     display: block;
 }
 
 #glossary span:first-child {
+    font-size: 1.5em;
+    line-height: 1.3em;
     color: #4B888D;
 }
 

@@ -37,9 +37,9 @@ $(function(){
         var fixed = false,
             $logo = $('.logo'),
             $nav = $('header nav');
-
+            // 8 + 170 + 22 = 200
         $(document).scroll(function() {
-            if( $(this).scrollTop() > 210 ) {
+            if( $(this).scrollTop() > 208 ) {
                 if( !fixed ) {
                     fixed = true;
                     $logo.addClass('fixed');
@@ -55,17 +55,6 @@ $(function(){
         });
     }
 
-    function dateFormatter(date) {
-      return date.toTimeString();
-    }
-
-    function handleTweets(tweets){
-        console.log(tweets)
-        var element = document.getElementById('impromtu');
-        element.innerHTML = tweets;
-    }
-
-    twitterFetcher.fetch('385651192933519361', 'impromtu', 1, true, false, true, '', false, handleTweets, false);
     fixMenuToTop();
     listenForToggle();
     setDayOfWeek();
