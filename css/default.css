@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body { font-size: 1em; line-height: 1.4; font: 16px/22px Helvetica, Helvetica Neue, Arial; overflow-x: hidden; }
-html,button,input,select,textarea { color: #222; }
+html,button,input,select,textarea { color: #222; overflow-x: hidden; }
 ul { list-style-type: none; }
 img { vertical-align: middle; }
 textarea { resize: vertical; }
