@@ -11,7 +11,11 @@
 }
 
 .instagram_container:hover .owner,
-.instagram_container:hover .caption {
+.instagram_container:hover .caption,
+.instagram_container:focus .owner,
+.instagram_container:focus .caption,
+.instagram_container:active .owner,
+.instagram_container:active .caption {
     display: block;
 }
 

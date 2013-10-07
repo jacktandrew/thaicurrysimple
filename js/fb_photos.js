@@ -3,7 +3,7 @@ jQuery(function($) {
         photo_sets = {
             daily_special: {
                 userID: ThaiCurrySimple,
-                albumID: '1073741826',
+                albumID: '25231',
                 selector: '.trust',
                 limit: 1
             }
@@ -24,10 +24,10 @@ jQuery(function($) {
 
             buildHTML: function(data, set) {
                 var imgHTML = $('<img src="' + data[0].src_big + '" />' +
-                                '<p>' + data[0].caption + '</p>');
+                                '<h4>' + data[0].caption + '</h4>');
 
                 $(set.selector).append(imgHTML);
-
+                console.log(data[0].caption)
             }
         };
 

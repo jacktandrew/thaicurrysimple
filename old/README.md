@@ -1,4 +1,0 @@
-thaicurrysimple
-===============
-
-restaurant website
