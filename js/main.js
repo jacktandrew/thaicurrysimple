@@ -55,14 +55,6 @@ $(function(){
         });
     }
 
-    function showOverlay() {
-        var $instaDiv = $('#instafeed > div');
-        $instaDiv.click(function() {
-            $instaDiv.find('.overlay').hide();
-            $(this).find('.overlay').show();
-        })
-    }
-
     fixMenuToTop();
     listenForToggle();
     setDayOfWeek();

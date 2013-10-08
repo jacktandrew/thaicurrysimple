@@ -22,6 +22,31 @@
     width: 20%;
 }
 
+nav li {
+    display: inline;
+}
+
+
+nav.fixed ul {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav.fixed div {
+    background-color: rgba(1,1,1,0.5);
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav.fixed div a {
+    float: left;
+}
+
 header {
     background: rgba(1,1,1,0.5);
     display: inline-block;
@@ -157,27 +182,7 @@ section.bg img {
 }
 
 
-@media only screen and (min-width: 480px) {
-
-    nav.fixed ul {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-    }
-
-    nav.fixed div {
-        background-color: rgba(1,1,1,0.5);
-        width: 100%;
-        height: 52px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-    }
-
-    nav.fixed div a {
-        float: left;
-    }
+@media only screen and (min-width: 420px) {
 
     .greens {
         background-image: url(../img/greens_1500.jpg);
@@ -193,7 +198,7 @@ section.bg img {
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 420px) {
 
     .greens {
         background-image: url(../img/greens_420.jpg);
@@ -209,6 +214,19 @@ section.bg img {
     .restaurant {
         background-image: url(../img/restaurant_420.jpg);
         height: 10em;
+    }
+
+    #menus #glossary {
+        font-size: 1em;
+    }
+
+    header nav li a {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    header nav div {
+        display: none;
     }
 
 }
