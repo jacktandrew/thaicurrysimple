@@ -103,8 +103,8 @@ section.bg img {
 
 .critics p { clear: both; }
 .critics p:before, .critics p:after { font-size: 24px;}
-.critics p:before { content: '“ '; }
-.critics p:after { content: ' ”'; }
+.critics p:before { content: '“'; }
+.critics p:after { content: '”'; }
 
 .critics a {
     display: block;

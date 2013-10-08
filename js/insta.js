@@ -3,8 +3,7 @@
 
 function listenForClick() {
     var $instaDiv = $('#instafeed > div');
-    $instaDiv.click(function(event) {
-        // event.preventDefault();
+    $instaDiv.click(function() {
         $instaDiv.find('.overlay').hide();
         $(this).find('.overlay').show();
     });
@@ -15,9 +14,13 @@ var template = '<div class="instagram_container">' +
                         '<img src="{{image}}" alt="{{caption}} by @{{model.user.username}}" class="instagram_image" />' +
                     '</div>' +
 
-                    '<a href="{{link}}" target="_blank" title="View on Instagram" tooltip="View on Instagram" alt="View on Instagram" class="icon-instagram"></a>' +
+                    '<a href="{{link}}" target="_blank" title="View on Instagram" alt="View on Instagram" class="icon-instagram"></a>' +
 
                     '<div class="overlay">' +
+
+                        '<a class="caption" href="{{link}}" target="_blank" class="caption instagram_image_meta_item">' +
+                            '{{caption}}' +
+                        '</a>' +
 
                         '<div class="owner instagram_image_meta_item">' +
 
@@ -27,13 +30,6 @@ var template = '<div class="instagram_container">' +
                                 '</a>' +
 
                         '</div>' +
-
-                        '<a href="{{link}}" target="_blank" class="caption instagram_image_meta_item">' +
-                            '<p>' +
-                                '{{caption}}' +
-                            '</p>' +
-                        '</a>' +
-
                     '</div>' +
                 '</div>',
 
