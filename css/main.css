@@ -22,9 +22,7 @@
     width: 20%;
 }
 
-nav li {
-    display: inline;
-}
+nav li { display: inline; }
 
 nav.fixed div, nav.fixed ul {
     position: fixed;
@@ -39,9 +37,7 @@ nav.fixed div {
     left: 0;
 }
 
-nav.fixed div a {
-    float: left;
-}
+nav.fixed div a { float: left; }
 
 header {
     background: rgba(1,1,1,0.5);
@@ -50,9 +46,7 @@ header {
 
 header, header ul { width: 500px }
 
-header ul {
-    background: #4B888D;
-}
+header ul { background: #4B888D; }
 
 header nav li:after, header nav a, .social-icons a {
     color: #fff;
@@ -85,13 +79,9 @@ section.bg img {
     margin: 0 auto;
 }
 
-#about_us p {
-    text-align: left;
-}
+#about_us p { text-align: left; }
 
-.critics {
-    margin: 20px 0;
-}
+.critics { margin: 20px 0; }
 
 .critics p { clear: both; }
 .critics p:before, .critics p:after { font-size: 24px;}
@@ -113,128 +103,9 @@ section.bg img {
 
 #location p, .hours p { margin: 2px 0; }
 
-
-@media only screen and (max-width: 800px) {
-    .social-icons {
-        width: 10%;
-        right: 3%;
-    }
-
-    .social-icons li {
-        padding: 20% 0;
-        display: block;
-    }
-
-    #menus .toggle {
-        margin-bottom: 30px;
-    }
-
-    #menus .toggle a:before {
-        content: "";
-    }
-
-    #menus .toggle a {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .bg {
-        height: 20em;
-    }
-}
-
-@media only screen and (max-width: 720px) {
-
-    .social-icons {
-        width: 10%;
-        right: 3%;
-        top: 3%;
-    }
-
-    .menu {
-        padding: 10px 20px !important;
-        margin-bottom: 50px;
-    }
-
-    header,
-    header ul {
-        width: 100%;
-    }
-
-    .header-container {
-        top: 0;
-    }
-
-    .bg {
-        height: 15em;
-    }
-}
-
-
 .logo_inline {
     display: none;
     max-width: 50%;
 }
 
-
-@media only screen and (min-width: 430px) {
-
-    .greens {
-        background-image: url(../img/greens_1500.jpg);
-    }
-
-    .dishes {
-        background-image: url(../img/dishes.jpg);
-    }
-
-    .restaurant {
-        background-image: url(../img/restaurant_1500.jpg);
-    }
-
-}
-
-@media only screen and (max-width: 430px) {
-
-    .greens {
-        background-image: url(../img/greens_420.jpg);
-        background-size: 150%;
-        height: 16em;
-    }
-
-    .dishes {
-        background-image: url(../img/dishes_420.jpg);
-        height: 10em;
-    }
-
-    .restaurant {
-        background-image: url(../img/restaurant_420.jpg);
-        height: 10em;
-    }
-
-    #menus #glossary {
-        font-size: 1em;
-    }
-
-    header nav li a {
-        padding: 12px;
-        font-size: 0.9em;
-    }
-
-    header nav div {
-        display: none;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-    nav.fixed .logo_inline {
-        display: block;
-        margin: 2% 10%;
-    }
-
-    .bg {
-        background-position: center;
-    }
-}
 

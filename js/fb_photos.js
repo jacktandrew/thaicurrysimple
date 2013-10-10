@@ -1,9 +1,11 @@
 jQuery(function($) {
-    var ThaiCurrySimple = '109877149095742',     //  Facebook user id for Thai Curry Simple,
+    var thaiCurrySimple = '109877149095742',     //  Facebook user id for Thai Curry Simple,
+        dailySpecial = '1073741826',
+        timelinePhotos = '25231',
         photo_sets = {
             daily_special: {
-                userID: ThaiCurrySimple,
-                albumID: '25231',
+                userID: thaiCurrySimple,
+                albumID: dailySpecial,
                 selector: '.trust',
                 limit: 1
             }
@@ -27,7 +29,7 @@ jQuery(function($) {
                                 '<h4>' + data[0].caption + '</h4>');
 
                 $(set.selector).append(imgHTML);
-                console.log(data[0].caption)
+                // console.log(data[0].caption)
             }
         };
 

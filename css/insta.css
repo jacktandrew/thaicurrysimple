@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 400px) {
     .instagram_image {
-       width: 320px;
+       width: 100%;
     }
 
     #instafeed .icon-instagram {

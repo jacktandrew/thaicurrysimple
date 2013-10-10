@@ -13,8 +13,6 @@ $(function(){
             },
             todayName = namesOfDays[todayNumber],
             $todaySpecial = $('.' + todayName);
-
-        console.log(todayName);
         $todaySpecial.addClass('active');
     };
 
@@ -36,10 +34,11 @@ $(function(){
     function fixMenuToTop() {
         var fixed = false,
             $logo = $('.logo'),
-            $nav = $('header nav');
-            // 8 + 170 + 22 = 200
+            $nav = $('header nav'),
+            navTop = $('header nav ul').offset().top;
+
         $(document).scroll(function() {
-            if( $(this).scrollTop() > 208 ) {
+            if( $(this).scrollTop() > navTop ) {
                 if( !fixed ) {
                     fixed = true;
                     $logo.addClass('fixed');
