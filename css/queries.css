@@ -1,10 +1,10 @@
 @media only screen and (max-width: 800px) {
-    .social-icons {
+    .header-container .social-icons {
         width: 10%;
         right: 3%;
     }
 
-    .social-icons li {
+    .header-container .social-icons li {
         padding: 20% 0;
         display: block;
     }
@@ -23,14 +23,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .bg {
+    body .bg {
         height: 20em;
     }
 }
 
 @media only screen and (max-width: 720px) {
 
-    .social-icons {
+    .header-container .social-icons {
         width: 10%;
         right: 3%;
         top: 3%;
@@ -49,42 +49,36 @@
     .header-container {
         top: 0;
     }
-
-    .bg {
-        height: 15em;
-    }
 }
 
 @media only screen and (min-width: 430px) {
 
-    .greens {
-        background-image: url(../img/greens_1500.jpg);
+    body .greens {
+        background-image: url(../img/greens_1000.jpg);
     }
 
-    .dishes {
+    body .dishes {
         background-image: url(../img/seafood_1500.jpg);
     }
 
-    .restaurant {
+    body .restaurant {
         background-image: url(../img/restaurant_1500.jpg);
     }
-
 }
 
 @media only screen and (max-width: 430px) {
 
-    .greens {
+    body .greens {
         background-image: url(../img/greens_420.jpg);
-        background-size: 150%;
         height: 16em;
     }
 
-    .dishes {
+    body .dishes {
         background-image: url(../img/seafood_420.jpg);
         height: 10em;
     }
 
-    .restaurant {
+    body .restaurant {
         background-image: url(../img/restaurant_420.jpg);
         height: 10em;
     }
@@ -110,7 +104,7 @@
         margin: 2% 10%;
     }
 
-    .bg {
+    body .bg {
         background-position: center;
     }
 }

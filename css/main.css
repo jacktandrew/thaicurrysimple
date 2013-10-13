@@ -1,5 +1,5 @@
 .bg {
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 30em;
 }
@@ -43,8 +43,6 @@ header {
     background: rgba(1,1,1,0.5);
     display: inline-block;
 }
-
-header, header ul { width: 500px }
 
 header ul { background: #4B888D; }
 
