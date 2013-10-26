@@ -5,7 +5,7 @@ jQuery(function($) {
         photo_sets = {
             daily_special: {
                 userID: thaiCurrySimple,
-                albumID: dailySpecial,
+                albumID: timelinePhotos,
                 selector: '.trust',
                 limit: 1
             }

@@ -3,9 +3,16 @@
 
 function listenForClick() {
     var $instaDiv = $('#instafeed > div');
+
     $instaDiv.click(function() {
         $instaDiv.find('.overlay').hide();
         $(this).find('.overlay').show();
+    });
+};
+
+function sanitizeProfanity(json) {
+    json.data.forEach(function(datum) {
+        datum.caption.text = datum.caption.text.replace(/fuck/gi, 'f***').replace(/shit/gi, 's***').replace(/cunt/gi, '****')
     });
 };
 
@@ -38,20 +45,15 @@ var template = '<div class="instagram_container">' +
         get: 'tagged',
         tagName: 'thaicurrysimple',
         resolution: 'standard_resolution',
-        limit: '8',
+        limit: '9',
         sortby: 'most-recent',
         accessToken: '174329427.467ede5.16893db4c3984ba081d6ced06a26dd73',
         template: template,
+        success: sanitizeProfanity,
         after: listenForClick
     });
 
 feed.run();
-
-
-
-
-
-
 
 
 

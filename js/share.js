@@ -32,8 +32,8 @@ function gotoShare(event) {
     window.open(shareUrl);
 }
 
-$(function(){
+(function(){
     $('.icon-facebook').click({param: 'Facebook'}, gotoShare);
     $('.icon-twitter-2').click({param: 'Twitter'}, gotoShare);
     $('.icon-instagram').click({param: 'Instagram'}, gotoShare);
-});
+}());

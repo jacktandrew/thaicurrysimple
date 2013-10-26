@@ -1,0 +1,40 @@
+section.map {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#map-canvas {
+    height: 40em;
+}
+
+#panel {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+input#searchTextField {
+    margin-bottom: -5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input.notfound {
+    border: 2px solid rgba(255, 0, 0, 0.4);
+}
+
+span#deleteicon {
+    position: absolute;
+    display: block;
+    top: 9px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background: url(https://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png) -2px -336px;
+    cursor: pointer;
+}

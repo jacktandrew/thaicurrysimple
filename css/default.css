@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-body { font-size: 1em; line-height: 1.4; font: 16px/22px Helvetica, Helvetica Neue, Arial; overflow-x: hidden; }
+body { font-size: 1em; line-height: 1.4; font: 16px/22px Helvetica, Helvetica Neue, Arial; overflow-x: hidden; background: #4B888D;}
 html,button,input,select,textarea { color: #222; overflow-x: hidden; }
 ul { list-style-type: none; }
 img { vertical-align: middle; }
@@ -17,10 +17,6 @@ a { text-decoration: none; color: #4B888D; }
     MOBILE: Menu
    ============== */
 
-.header-container {
-    text-align: center;
-}
-
 nav a {
     display: inline-block;
     font-size: 1.3em;
@@ -33,8 +29,7 @@ nav a:hover {
     opacity: .7;
 }
 
-
-header nav li a {
+nav.top a {
     padding: 15px 20px;
 }
 /* ==============
@@ -68,9 +63,9 @@ header nav li a {
     INTERMEDIATE: Menu
    ==================== */
 
-    header nav li:after {
+    nav.top li:after {
         content: "|";
-        color: #4B888D;
+        color: white;
     }
 
     nav li:first-child a {

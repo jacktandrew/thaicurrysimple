@@ -1,4 +1,4 @@
-$(function(){
+(function(){
     function setDayOfWeek() {
         var todayObject = new Date(),
             todayNumber = todayObject.getDay(),
@@ -33,21 +33,18 @@ $(function(){
 
     function fixMenuToTop() {
         var fixed = false,
-            $logo = $('.logo'),
-            $nav = $('header nav'),
-            navTop = $('header nav ul').offset().top;
+            $nav = $('nav,top'),
+            navTop = $('nav.top ul').offset().top;
 
         $(document).scroll(function() {
             if( $(this).scrollTop() > navTop ) {
                 if( !fixed ) {
                     fixed = true;
-                    $logo.addClass('fixed');
                     $nav.addClass('fixed');
                 }
             } else {
                 if( fixed ) {
                     fixed = false;
-                    $logo.removeClass('fixed');
                     $nav.removeClass('fixed');
                 }
             }
@@ -57,4 +54,4 @@ $(function(){
     fixMenuToTop();
     listenForToggle();
     setDayOfWeek();
-});
+}());
