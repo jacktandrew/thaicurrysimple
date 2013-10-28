@@ -1,0 +1,100 @@
+.header-container {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+h1.logo {
+	background: url("../img/logo_border.png");
+	height: 186px;
+	width: 231px;
+	text-indent: -9999px;
+	margin: 10px auto;
+}
+
+.social-icons {
+    position: absolute;
+    width: 150px;
+    right: 1%;
+    top: 5%;
+    z-index: 10;
+}
+
+.social-icons ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    font-size: 36px;
+    padding: 3%;
+}
+
+header {
+    background: rgba(1,1,1,0.5);
+    display: inline-block;
+}
+
+header.wrapper {
+    position: relative;
+    width: 480px;
+    left: 50%;
+    margin-left: -240px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    opacity: .7;
+}
+
+nav.top {
+    width: 100%;
+    max-width: 1500px;
+}
+
+a.logo_inline {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 5%;
+}
+
+.logo_inline img {
+    height: 32px;
+}
+
+nav.top.fixed {
+    position: fixed;
+    background-color: rgba(1,1,1,0.8);
+    top: 0;
+    z-index: 8;
+}
+
+nav.top ul {
+    background: #4B888D;
+    width: 480px;
+    left: 50%;
+    margin-left: -240px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+nav.top a, nav.top a:after, .social-icons a {
+    color: #fff;
+}
+
+

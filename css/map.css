@@ -1,7 +1,5 @@
 section.map {
     position: relative;
-    max-width: 900px;
-    margin: 0 auto;
 }
 
 #map-canvas {
@@ -10,9 +8,10 @@ section.map {
 
 #panel {
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 50%;
-    margin-left: -180px;
+    width: 500px;
+    margin-left: -250px;
     z-index: 5;
     background-color: #fff;
     padding: 5px;
@@ -20,7 +19,7 @@ section.map {
 }
 
 input#searchTextField {
-    margin-bottom: -5px;
+    width: 99%;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -32,7 +31,7 @@ span#deleteicon {
     position: absolute;
     display: block;
     top: 9px;
-    right: 10px;
+    right: 2%;
     width: 12px;
     height: 12px;
     background: url(https://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png) -2px -336px;

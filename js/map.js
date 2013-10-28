@@ -18,7 +18,9 @@
 
 var directionsService,
     directionsDisplay,
+    thaiCurrySimplePlace,
     thaiCurrySimpleMarker,
+    thaiCurrySimpleInfowindow,
     infowindow,
     marker,
     map;
@@ -27,17 +29,62 @@ function initialize() {
 
     var service,
         autocomplete,
-        thaiCurrySimplePlace = {},
         mapOptions = {
             center: new google.maps.LatLng(47.598907, -122.327504),
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
+            draggable: false,
+            zoomControl: false,
+            scrollwheel: false,
+            mapTypeControl: false,
+            zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL
+                },
+
             styles: [
-              // {
-              //   stylers: [
-              //     { visibility: 'simplified' }
-              //   ]
-              // }
+              {
+                  "stylers": [
+                      { "hue": "#4B888D" },
+                      { "gamma": 0.33 }
+                  ]
+              },
+              {
+                  "featureType": "water",
+                  "stylers": [
+                    { "hue": "#4B888D" },
+                    { "saturation": -10 },
+                    { "gamma": 2 }
+                  ]
+              },
+              {
+                "featureType": "transit",
+                "stylers": [
+                  { "visibility": "off" }
+                ]
+              },{
+                "featureType": "administrative",
+                "stylers": [
+                  { "visibility": "off" }
+                ]
+              },{
+                "featureType": "landscape.man_made",
+                "stylers": [
+                  { "visibility": "off" }
+                ]
+              },{
+                "featureType": "poi.business",
+                "stylers": [
+                  { "visibility": "off" }
+                ]
+              },{
+                "featureType": "poi.government",
+                "stylers": [
+                  { "saturation": 1 },
+                  { "lightness": 1 },
+                  { "visibility": "off" }
+                ]
+              }
             ]
         },
         input = document.getElementById('searchTextField'),
@@ -65,18 +112,8 @@ function initialize() {
 
     google.maps.event.addListener(autocomplete, 'place_changed', getDirectionsToPlace);
 
-    var request = {
-        reference: "CoQBcwAAAP4gZtnHn9wg5kMwoV6Z7zqJ-S4sqIl6Wy8gIFYZ4fONcl8ab0B73Bw_FsjQddflU93LlcIneLfjD1XSi-aYUGGCnuTn8a37V92VeG_8asAOH9tSv8YQgChy4Cfp76iNjjl2Tza4SDI-yLvB_58q5Zrp0EPmfo8t3FiSrFhEbSlFEhB6Vzlq_aihdKYxTOdXDCavGhSFAUqs9yGlUnaipuzmY8FWGxmdbg"
-    };
-
-    service.getDetails(request, function(place, status) {
-        if (status == google.maps.places.PlacesServiceStatus.OK) {
-            thaiCurrySimplePlace = place
-            createMarker(thaiCurrySimplePlace, thaiCurrySimpleMarker, thaiCurrySimpleInfowindow);
-        }
-    });
-
-    initClearInputButton()
+    initClearInputButton();
+    getDetailsOfTCS(service);
 
     function getDirectionsToPlace() {
         infowindow.close();
@@ -92,9 +129,21 @@ function initialize() {
 
         calcRoute(place, thaiCurrySimplePlace);
         directionsDisplay.setMap(map);
-        // createMarker(thaiCurrySimple);
         createMarker(place, marker, infowindow);
     }
+}
+
+function getDetailsOfTCS(service) {
+    var request = {
+        reference: "CoQBcwAAAP4gZtnHn9wg5kMwoV6Z7zqJ-S4sqIl6Wy8gIFYZ4fONcl8ab0B73Bw_FsjQddflU93LlcIneLfjD1XSi-aYUGGCnuTn8a37V92VeG_8asAOH9tSv8YQgChy4Cfp76iNjjl2Tza4SDI-yLvB_58q5Zrp0EPmfo8t3FiSrFhEbSlFEhB6Vzlq_aihdKYxTOdXDCavGhSFAUqs9yGlUnaipuzmY8FWGxmdbg"
+    };
+
+    service.getDetails(request, function(place, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            thaiCurrySimplePlace = place;
+            createMarker(thaiCurrySimplePlace, thaiCurrySimpleMarker, thaiCurrySimpleInfowindow);
+        }
+    });
 }
 
 function createMarker(place, marker, infowindow) {
@@ -120,8 +169,11 @@ function createMarker(place, marker, infowindow) {
     }
 
     if (place.name === "Thai Curry Simple") {
-        photoUrl = place.photos[1].getUrl({'maxWidth': 110, 'maxHeight': 110});
-        html += '<img style="float: right" src="' + photoUrl + '" />';
+        // html += '<img style="float: left" src="img/logo_border.png" />';
+        html += '<img style="float: right" src="img/cartoon.jpg" />';
+        google.maps.event.addListener(marker, 'click', function() {
+            thaiCurrySimpleInfowindow.open(map, thaiCurrySimpleMarker);
+        });
     }
 
     html += '<strong margin="right: 5px">' + place.name + '<br></strong>' + address;
@@ -159,6 +211,8 @@ function loadScript() {
     script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCRo8UyY3zvf3vQsJkt3F9Xw0SrsbV4BNw&sensor=true&libraries=places&callback=initialize";
     document.body.appendChild(script);
 }
+
+document.add
 
 window.onload = loadScript;
 
