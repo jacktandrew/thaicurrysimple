@@ -59,11 +59,11 @@
 @media only screen and (min-width: 430px) {
 
     body .curries {
-        background-image: url(../img/curries_1000.jpg);
+        background-image: url(../thaicurrysimple/img/curries_1000.jpg);
     }
 
     body .pad {
-        background-image: url(../img/pad_thai_720.jpg);
+        background-image: url(../thaicurrysimple/img/pad_thai_720.jpg);
     }
 
 }
@@ -71,12 +71,12 @@
 @media only screen and (max-width: 430px) {
 
     body .curries {
-        background-image: url(../img/curries_420.jpg);
+        background-image: url(../thaicurrysimple/img/curries_420.jpg);
         height: 16em;
     }
 
     body .pad {
-        background-image: url(../img/pad_thai_420.jpg);
+        background-image: url(../thaicurrysimple/img/pad_thai_420.jpg);
         height: 10em;
     }
 
